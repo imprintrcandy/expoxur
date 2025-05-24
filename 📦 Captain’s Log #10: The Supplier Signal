@@ -1,0 +1,16 @@
+✅ /suppliers route now live with branded “Coming Soon” page
+✅ Includes animated icons, clean CTA, and SEO-friendly layout
+✅ Supplier tab added to main navbar for visibility
+✅ Copywriting clearly positions this as a future B2B showcase
+✅ Button triggers toast notification (disabled for now)
+✅ Structure built using reusable ComingSoon component
+
+Next Moves:
+
+Prepare backend flow for supplier signups once ready
+
+Draft list of supplier categories and how they’ll be verified
+
+Consider launching "Expoxur Verified Supplier" badge in Phase 2
+
+Set metric: Minimum 30 quality suppliers onboarded before launch
