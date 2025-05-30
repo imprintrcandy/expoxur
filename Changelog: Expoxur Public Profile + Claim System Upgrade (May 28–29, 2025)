@@ -1,0 +1,85 @@
+✨ Public Profile Visibility
+Fixed issue where admin-created profiles (organizers/exhibitors/events) were not publicly visible
+
+Updated routing to ensure visibility across both custom domain (expoxur.io) and lovable preview
+
+Fallback messaging added for unverified or inaccessible profiles
+
+Profiles now visible if:
+
+Role is organizer or exhibitor
+
+Status is admin_created or approved
+
+Optional: linked to a public event
+
+🧩 Claim System Enhancements
+Created new Claim This Profile modal for organizer/exhibitor/event profiles
+
+Step-by-step guide to:
+
+Send keyword (e.g. CLAIM2025 @username)
+
+Provide ID or proof
+
+Message facebook.com/expoxurph
+
+CTA logic:
+
+Added “Visit Official Page” and “✅ Keyword Sent” buttons
+
+Keyword Sent button triggers logging of claim in admin dashboard
+
+🛠️ Admin Dashboard Enhancements
+Created new tab: Claim Requests
+
+Admin can review claim keyword logs
+
+Manual approve or reject actions
+
+Approve = full dashboard access granted
+
+Added profile status control: admin_created, active, pending, suspended
+
+Redesigned Edit Business Profile:
+
+Full control for company name, username, website, description, and phone
+
+Inline event creation panel with status + auto mark as "Created by Admin"
+
+🎟️ Supporter System
+Added "Support" button with dynamic count
+
+Auto-bookmark added to attendee dashboard on click
+
+Display logic:
+
+“SUPPORT (1 supporter)” vs “SUPPORT (X supporters)” (plural/singular logic)
+
+Consistent design across cards + public profile
+
+Admin dashboard now includes supporter count visibility
+
+🧪 UX/UI Consistency Updates
+Synced top navigation bars for Admin, Organizer, Exhibitor, Attendee dashboards
+
+Updated claim modals to only open if user is logged in
+
+If not logged in, show modal prompting login/register
+
+Claim modal includes redirect after login
+
+🧼 Cleanup + Refactors
+Removed duplicate tabs inside Admin sidebar (e.g., Directory)
+
+Updated meta tags for OpenGraph to fix wrong link previews
+
+Improved mobile responsiveness for supporter counts
+
+✅ Next Up (suggested):
+
+Payment gating for profile claims (₱999 / 3 months)
+
+Auto-expiration for unclaimed profiles
+
+Stripe integration for checkout
